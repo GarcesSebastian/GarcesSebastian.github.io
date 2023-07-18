@@ -255,14 +255,14 @@ p{
 
 
 .content h3{
-    font-size: clamp(15px, 1.6vw, 50px);
+    font-size: clamp(13px, 1.6vw, 50px);
     color: var(--titular);
 }
 
 .titleFilters{
     width: 100%;
     height: fit-content;
-    margin: 2% 0 4% 0;
+    margin: 2% 0 8% 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -303,7 +303,7 @@ p{
 }
 
 .contentPrice .titlePrice{
-    font-size: clamp(13px, 1.4vw, 35px);
+    font-size: clamp(12px, 1.4vw, 35px);
     font-weight: bolder;
     margin: 0 0 1.5% 5%;
 }
@@ -349,7 +349,7 @@ p{
 }
 
 .contentBrand .titleBrand{
-    font-size: clamp(13px, 1.4vw, 35px);
+    font-size: clamp(12px, 1.4vw, 35px);
     font-weight: bolder;
     margin: 3% 0 1.5% 5%;
 }
@@ -397,7 +397,7 @@ p{
 }
 
 .listBrand li label{
-    font-size: clamp(13px, 1.1vw, 30px);
+    font-size: clamp(11px, 1.1vw, 30px);
     font-weight: bolder;
 }
 
@@ -413,7 +413,7 @@ p{
 }
 
 .contentShipping .titleShipping{
-    font-size: clamp(13px, 1.4vw, 35px);
+    font-size: clamp(12px, 1.4vw, 35px);
     font-weight: bolder;
     margin: 3% 0 1.5% 5%;
 }
@@ -455,7 +455,7 @@ p{
 }
 
 .listShipping li label{
-    font-size: clamp(13px, 1.1vw, 30px);
+    font-size: clamp(11px, 1.1vw, 30px);
     font-weight: bolder;
 
     & .numberShipping{
@@ -477,7 +477,7 @@ p{
 }
 
 .contentState .titleState{
-    font-size: clamp(13px, 1.4vw, 35px);
+    font-size: clamp(12px, 1.4vw, 35px);
     font-weight: bolder;
     margin: 3% 0 1.5% 5%;
 }
@@ -519,7 +519,7 @@ p{
 }
 
 .listState li label{
-    font-size: clamp(13px, 1.1vw, 30px);
+    font-size: clamp(11px, 1.1vw, 30px);
     font-weight: bolder;
 
     & .numberState{
@@ -542,7 +542,7 @@ p{
 }
 
 .contentStorage .titleStorage{
-    font-size: clamp(13px, 1.4vw, 35px);
+    font-size: clamp(12px, 1.4vw, 35px);
     font-weight: bolder;
     margin: 3% 0 1.5% 5%;
 }
@@ -584,7 +584,7 @@ p{
 }
 
 .listStorage li label{
-    font-size: clamp(13px, 1.1vw, 30px);
+    font-size: clamp(11px, 1.1vw, 30px);
     font-weight: bolder;
 
     & .numberStorage{
@@ -606,7 +606,7 @@ p{
 }
 
 .contentSizeScreen .titleSizeScreen{
-    font-size: clamp(13px, 1.4vw, 35px);
+    font-size: clamp(12px, 1.4vw, 35px);
     font-weight: bolder;
     margin: 3% 0 1.5% 5%;
 }
@@ -648,7 +648,7 @@ p{
 }
 
 .listSizeScreen li label{
-    font-size: clamp(13px, 1.1vw, 30px);
+    font-size: clamp(11px, 1.1vw, 30px);
     font-weight: bolder;
 
     & .numberSizeScreen{
@@ -670,7 +670,7 @@ p{
 }
 
 .contentRAM .titleRAM{
-    font-size: clamp(13px, 1.4vw, 35px);
+    font-size: clamp(12px, 1.4vw, 35px);
     font-weight: bolder;
     margin: 3% 0 1.5% 5%;
 }
@@ -712,7 +712,7 @@ p{
 }
 
 .listRAM li label{
-    font-size: clamp(13px, 1.1vw, 30px);
+    font-size: clamp(11px, 1.1vw, 30px);
     font-weight: bolder;
 
     & .numberRAM{
@@ -752,7 +752,7 @@ p{
 
 .orderArticles{
     position: absolute;
-    right: 20%;
+    right: 23%;
     width: fit-content;
     height: fit-content;
     display: flex;
@@ -780,7 +780,7 @@ p{
 }
 
 .sectionOrder{
-    width: 16%;
+    width: 18%;
     height: 100%;
     display: flex;
     padding: 1%;
@@ -801,7 +801,7 @@ p{
 }
 
 .contentOrder h4, span{
-    font-size: clamp(7px, 1vw, 35px);
+    font-size: clamp(9px, 1vw, 35px);
     color: var(--texto-del-boton);
 }
 
@@ -845,12 +845,111 @@ p{
 }
 
 .listOrder li h3{
-    font-size: 15px;
+    font-size: clamp(9px, 1vw, 35px);
 }
 
 .listOrder li:hover h3{
     color: var(--segundario);
 }
+
+.contentArticlesLine{
+    position: relative;
+    top: 5%;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    padding: 1%;
+}
+
+.containerListArticle{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 3% 0;
+}
+
+.listArticle{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.elementArticle{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5%;
+    background-color: #222;
+    cursor: pointer;
+    border-radius: 1.5px;
+    box-shadow: 0px 0px 2.5px #222,0px 0px 2.5px #222,0px 0px 2.5px #222,0px 0px 2.5px #222;
+}
+
+.elementArticle .imageArticle{
+    width: clamp(150px, 18vw, 400px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.imageArticle img{
+    width: 100%;
+    height: 100%;
+}
+
+.charactersArticle{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.charactersArticle h3{
+    font-size: clamp(13px, 1.4vw, 45px);
+    
+}
+
+.charactersArticle p{
+    font-size: clamp(11px, 1.3vw, 45px);
+}
+
+.charactersArticle h3:last-child{
+    color: var(--segundario);
+}
+
+.topElement{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footerArticle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.listStars{
+    display: flex;
+}
+
+.listStars li{
+    color:var(--boton);
+    cursor: pointer;
+    font-size: clamp(12px, 1.3vw, 15px);
+}
+
 
 
 /*Content*/
