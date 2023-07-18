@@ -246,11 +246,10 @@ p{
 
 .containerFilters{
     width: 35%;
-    height: 10%;
+    height: auto;
     border-right: .5px solid var(--parrafo);
     display: flex;
     flex-direction: column;
-    margin: 0 0% 0 0;
 }
 
 
@@ -262,7 +261,7 @@ p{
 .titleFilters{
     width: 100%;
     height: fit-content;
-    margin: 2% 0 8% 0;
+    margin: 2% 0 0% 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -334,6 +333,7 @@ p{
         border: 1px solid var(--segundario);
         outline: none;
         padding: 1% 3%;
+        font-size: clamp(10px, 1.1vw, 30px);
     }
 }
 
@@ -385,8 +385,8 @@ p{
     appearance: none;
     background-color: transparent;
     border: 1px solid var(--segundario);
-    width: clamp(10px, 3vh, 100px);
-    height: clamp(10px, 3vh, 100px);
+    width: clamp(10px, 2.8vh, 100px);
+    height: clamp(10px, 2.8vh, 100px);
     outline: none;
     cursor: pointer;
     border-radius: 1px;
@@ -397,7 +397,7 @@ p{
 }
 
 .listBrand li label{
-    font-size: clamp(11px, 1.1vw, 30px);
+    font-size: clamp(10px, 1.1vw, 30px);
     font-weight: bolder;
 }
 
@@ -443,8 +443,8 @@ p{
     appearance: none;
     background-color: transparent;
     border: 1px solid var(--segundario);
-    width: clamp(10px, 3vh, 100px);
-    height: clamp(10px, 3vh, 100px);
+    width: clamp(10px, 2.8vh, 100px);
+    height: clamp(10px, 2.8vh, 100px);
     outline: none;
     cursor: pointer;
     border-radius: 1px;
@@ -455,7 +455,7 @@ p{
 }
 
 .listShipping li label{
-    font-size: clamp(11px, 1.1vw, 30px);
+    font-size: clamp(10px, 1.1vw, 30px);
     font-weight: bolder;
 
     & .numberShipping{
@@ -507,8 +507,8 @@ p{
     appearance: none;
     background-color: transparent;
     border: 1px solid var(--segundario);
-    width: clamp(10px, 3vh, 100px);
-    height: clamp(10px, 3vh, 100px);
+    width: clamp(10px, 2.8vh, 100px);
+    height: clamp(10px, 2.8vh, 100px);
     outline: none;
     cursor: pointer;
     border-radius: 1px;
@@ -519,7 +519,7 @@ p{
 }
 
 .listState li label{
-    font-size: clamp(11px, 1.1vw, 30px);
+    font-size: clamp(10px, 1.1vw, 30px);
     font-weight: bolder;
 
     & .numberState{
@@ -572,8 +572,8 @@ p{
     appearance: none;
     background-color: transparent;
     border: 1px solid var(--segundario);
-    width: clamp(10px, 3vh, 100px);
-    height: clamp(10px, 3vh, 100px);
+    width: clamp(10px, 2.8vh, 100px);
+    height: clamp(10px, 2.8vh, 100px);
     outline: none;
     cursor: pointer;
     border-radius: 1px;
@@ -584,7 +584,7 @@ p{
 }
 
 .listStorage li label{
-    font-size: clamp(11px, 1.1vw, 30px);
+    font-size: clamp(10px, 1.1vw, 30px);
     font-weight: bolder;
 
     & .numberStorage{
@@ -636,8 +636,8 @@ p{
     appearance: none;
     background-color: transparent;
     border: 1px solid var(--segundario);
-    width: clamp(10px, 3vh, 100px);
-    height: clamp(10px, 3vh, 100px);
+    width: clamp(10px, 2.8vh, 100px);
+    height: clamp(10px, 2.8vh, 100px);
     outline: none;
     cursor: pointer;
     border-radius: 1px;
@@ -648,7 +648,7 @@ p{
 }
 
 .listSizeScreen li label{
-    font-size: clamp(11px, 1.1vw, 30px);
+    font-size: clamp(10px, 1.1vw, 30px);
     font-weight: bolder;
 
     & .numberSizeScreen{
@@ -700,8 +700,8 @@ p{
     appearance: none;
     background-color: transparent;
     border: 1px solid var(--segundario);
-    width: clamp(10px, 3vh, 100px);
-    height: clamp(10px, 3vh, 100px);
+    width: clamp(10px, 2.8vh, 100px);
+    height: clamp(10px, 2.8vh, 100px);
     outline: none;
     cursor: pointer;
     border-radius: 1px;
@@ -712,7 +712,7 @@ p{
 }
 
 .listRAM li label{
-    font-size: clamp(11px, 1.1vw, 30px);
+    font-size: clamp(10px, 1.1vw, 30px);
     font-weight: bolder;
 
     & .numberRAM{
@@ -722,9 +722,7 @@ p{
 
 }
 
-.containerFilters div:last-child{
-    border: none;
-}
+
 
 /*Articles*/
 
@@ -793,7 +791,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 3px;
+    border-radius: 1.5px;
     box-shadow: 0px 0px 2px #222,0px 0px 2px #222,0px 0px 2px #222;
     gap: 10px;
     cursor: pointer;
@@ -801,7 +799,7 @@ p{
 }
 
 .contentOrder h4, span{
-    font-size: clamp(9px, 1vw, 35px);
+    font-size: clamp(8.5px, 1vw, 35px);
     color: var(--texto-del-boton);
 }
 
@@ -866,7 +864,7 @@ p{
     height: fit-content;
     display: flex;
     flex-direction: column;
-    margin: 0 0 3% 0;
+    margin: 2% 0 3% 0;
 }
 
 .listArticle{
@@ -874,7 +872,7 @@ p{
     height: fit-content;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
 .elementArticle{
