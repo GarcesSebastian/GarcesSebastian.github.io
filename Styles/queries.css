@@ -10,6 +10,10 @@
     display: none;
 }
 
+.containerFilterQ{
+    display: none;
+}
+
 /*MEDIA QUERIES*/
 @media (max-width:720px) {
     /* .content{
