@@ -1,0 +1,847 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
+
+:root{
+    --fondo:#0f0e17;
+    --titular:#fffffe;
+    --parrafo:#a7a9be;
+    --texto-del-boton:#fffffe;
+    --boton:#ff8906;
+    --borde:black;
+    --segundario:#f25f4c;
+}
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    color: var(--titular);
+}
+
+body {
+    height: 100vh;
+    background-color: var(--fondo);
+}
+
+p{
+    color: var(--parrafo);
+}
+
+.containerAll{
+    width: 100%;
+    height: 100vh;    
+}
+
+.nav{
+    position: relative;
+    top: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navSuperior{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 0 8%;
+    width: 100%;
+    margin: 0 0 1% 0;
+}
+
+.containerLogo{
+    position: absolute;
+    top: -10%;
+    left: 3%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    width: 4%;
+    height: fit-content;
+}
+
+.containerLogo img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.containerLogo label{
+    font-size: clamp(18px, 1.3vw, 23px);
+    font-weight: bolder;
+    font-family: 'Lora', serif;
+    cursor: pointer;
+}
+
+.containerSearch{
+    position: absolute;
+    width: 30%;
+    height: fit-content;
+    padding: 0;
+    margin: 0 4% 0 0;
+    display: flex;
+}
+
+.containerSearch .search{
+    outline: none;
+    color: var(--parrafo);
+    padding: 2.5% 15% 2.5% 4%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--titular);
+    border-radius: 1.5px;
+    font-size: clamp(10px, 1.2vw, 30px);
+    font-weight: 400;
+    background-color: transparent;
+}
+
+.containerSearch .search::-webkit-search-cancel-button{
+    display: none;
+}
+
+.confirmSearch{
+    position: absolute;
+    right: 0;
+    margin: 2.5% 5%;
+    font-size: clamp(10px, 1.2vw, 30px);
+    cursor: pointer;
+}
+
+.shoppingCart{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+.cart i{
+    cursor: pointer;
+    font-size: clamp(13px, 1.7vw, 34px);
+    color: var(--boton);
+}
+
+.cart i:hover{
+    animation: alert .5s linear;
+}
+
+.containerSettings{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    right: 2.5%;
+}
+
+.settings{
+    width: fit-content;
+    height: fit-content;
+}
+
+.settings i{
+    cursor: pointer;
+    font-size: clamp(13px, 1.7vw, 34px);
+    color: var(--boton);
+}
+
+.settings i:hover{
+    animation: alert .5s linear;
+}
+
+@keyframes alert {
+    0%{
+        transform:scale(1.2) rotate(-20deg);
+    }33%{
+        transform:rotate(0deg);
+    }66%{
+        transform:rotate(-15deg);
+    }100%{
+        transform:rotate(0deg);
+    }
+}
+
+
+.navInferior{
+    margin: 2% 0 0 0;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    padding: 0 0 .8% 0;
+    align-items: center;
+    justify-content: center;
+    border-bottom: .5px solid var(--parrafo);
+}
+
+.containerText {
+    width:100%;
+    height: auto;
+    padding:0% 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  
+.containerText ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+    gap: 30px;
+    position: relative;
+}
+
+.containerText ul li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:16px;
+}
+
+.containerText ul li label{
+    font-size: clamp(13px, 1.2vw, 36px);
+    display: flex;
+    cursor: pointer;
+}
+
+
+.containerText ul li label:hover, span:hover i{
+    color:var(--parrafo);
+}
+
+.confirmSearch:hover i{
+    color: var(--titular);
+}
+
+.iconNav i{
+    color: var(--boton);
+}
+
+.iconNav:hover i {
+    animation: alert .5s ease-in-out;
+}
+
+/*Content*/
+
+.content{
+    position: relative;
+    top: 10%;
+    width: 94%;
+    height: fit-content;
+    background-color: #3333;
+    box-shadow: 0px 0px 3.5px #3333,0px 0px 3.5px #3333,0px 0px 3.5px #3333;
+    display: flex;
+    margin: 0 3%;
+    border-radius: 1.5px;
+}
+
+
+/*Filters*/
+
+.containerFilters{
+    width: 35%;
+    height: 100%;
+    border-right: .5px solid var(--parrafo);
+    display: flex;
+    flex-direction: column;
+    margin: 0 2% 0 0;
+}
+
+
+.content h3{
+    font-size: clamp(15px, 1.6vw, 50px);
+    color: var(--titular);
+}
+
+.titleFilters{
+    width: 100%;
+    height: fit-content;
+    margin: 2% 0 4% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.delFilters, .addFilters{
+    font-size: clamp(13px, 1.3vw, 50px);
+    cursor: pointer;
+    padding: 5% 2.2%;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delFilters i, .addFilters i{
+    color: var(--texto-del-boton);
+}
+
+.delFilters:hover i, .addFilters:hover i {
+    color: var(--texto-del-boton);
+}
+
+.delFilters:hover, .addFilters:hover {
+    background-color: rgb(255, 255, 255, .1);
+}
+
+.contentPrice{
+    position: relative;
+    top: 1.5%;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 8% 0;
+    border-bottom: .5px solid var(--parrafo);
+}
+
+.contentPrice .titlePrice{
+    font-size: clamp(13px, 1.4vw, 35px);
+    font-weight: bolder;
+    margin: 0 0 1.5% 5%;
+}
+
+.priceMinMax{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.containerMin, .containerMax{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    gap: 10px;
+    margin: 0 0 0 5%;
+
+    & label{
+        margin: 1% 0 0 0;
+        font-size: clamp(12px, 1.4vw, 35px);
+    }
+
+    & input{
+        width: 60%;
+        background:transparent;
+        border: 1px solid var(--segundario);
+        outline: none;
+        padding: 1% 3%;
+    }
+}
+
+.contentBrand{
+    position: relative;
+    top: 1.5%;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 8% 0;
+    border-bottom: .5px solid var(--parrafo);
+}
+
+.contentBrand .titleBrand{
+    font-size: clamp(13px, 1.4vw, 35px);
+    font-weight: bolder;
+    margin: 3% 0 1.5% 5%;
+}
+
+.containerBrand{
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 5%;
+    display: flex;
+}
+
+.listBrand{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: 10px;
+}
+
+.listBrand li{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.itemBrand *{
+    cursor: pointer;
+}
+
+.listBrand li input[type="checkbox"]{
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid var(--segundario);
+    width: clamp(10px, 3vh, 100px);
+    height: clamp(10px, 3vh, 100px);
+    outline: none;
+    cursor: pointer;
+    border-radius: 1px;
+}
+
+.listBrand li input[type="checkbox"]:checked{
+    background-color: var(--segundario);
+}
+
+.listBrand li label{
+    font-size: clamp(13px, 1.1vw, 30px);
+    font-weight: bolder;
+}
+
+.contentShipping{
+    position: relative;
+    top: 1.5%;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 8% 0;
+    border-bottom: .5px solid var(--parrafo);
+}
+
+.contentShipping .titleShipping{
+    font-size: clamp(13px, 1.4vw, 35px);
+    font-weight: bolder;
+    margin: 3% 0 1.5% 5%;
+}
+
+.listShipping{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: 10px;
+    margin: 0 0 0 5%;
+}
+
+.listShipping li{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.itemShipping *{
+    cursor: pointer;
+}
+
+.listShipping li input[type="checkbox"]{
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid var(--segundario);
+    width: clamp(10px, 3vh, 100px);
+    height: clamp(10px, 3vh, 100px);
+    outline: none;
+    cursor: pointer;
+    border-radius: 1px;
+}
+
+.listShipping li input[type="checkbox"]:checked{
+    background-color: var(--segundario);
+}
+
+.listShipping li label{
+    font-size: clamp(13px, 1.1vw, 30px);
+    font-weight: bolder;
+
+    & .numberShipping{
+        font-size: clamp(11px, 1.7vw, 14px);
+        color:var(--parrafo);
+    }
+
+}
+
+.contentState{
+    position: relative;
+    top: 1.5%;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 8% 0;
+    border-bottom: .5px solid var(--parrafo);
+}
+
+.contentState .titleState{
+    font-size: clamp(13px, 1.4vw, 35px);
+    font-weight: bolder;
+    margin: 3% 0 1.5% 5%;
+}
+
+.listState{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: 10px;
+    margin: 0 0 0 5%;
+}
+
+.listState li{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.itemState *{
+    cursor: pointer;
+}
+
+.listState li input[type="checkbox"]{
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid var(--segundario);
+    width: clamp(10px, 3vh, 100px);
+    height: clamp(10px, 3vh, 100px);
+    outline: none;
+    cursor: pointer;
+    border-radius: 1px;
+}
+
+.listState li input[type="checkbox"]:checked{
+    background-color: var(--segundario);
+}
+
+.listState li label{
+    font-size: clamp(13px, 1.1vw, 30px);
+    font-weight: bolder;
+
+    & .numberState{
+        font-size: clamp(11px, 1.7vw, 14px);
+        color:var(--parrafo);
+    }
+
+}
+
+
+.contentStorage{
+    position: relative;
+    top: 1.5%;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 8% 0;
+    border-bottom: .5px solid var(--parrafo);
+}
+
+.contentStorage .titleStorage{
+    font-size: clamp(13px, 1.4vw, 35px);
+    font-weight: bolder;
+    margin: 3% 0 1.5% 5%;
+}
+
+.listStorage{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: 10px;
+    margin: 0 0 0 5%;
+}
+
+.listStorage li{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.itemStorage *{
+    cursor: pointer;
+}
+
+.listStorage li input[type="checkbox"]{
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid var(--segundario);
+    width: clamp(10px, 3vh, 100px);
+    height: clamp(10px, 3vh, 100px);
+    outline: none;
+    cursor: pointer;
+    border-radius: 1px;
+}
+
+.listStorage li input[type="checkbox"]:checked{
+    background-color: var(--segundario);
+}
+
+.listStorage li label{
+    font-size: clamp(13px, 1.1vw, 30px);
+    font-weight: bolder;
+
+    & .numberStorage{
+        font-size: clamp(11px, 1.7vw, 14px);
+        color:var(--parrafo);
+    }
+
+}
+
+.contentSizeScreen{
+    position: relative;
+    top: 1.5%;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 8% 0;
+    border-bottom: .5px solid var(--parrafo);
+}
+
+.contentSizeScreen .titleSizeScreen{
+    font-size: clamp(13px, 1.4vw, 35px);
+    font-weight: bolder;
+    margin: 3% 0 1.5% 5%;
+}
+
+.listSizeScreen{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: 10px;
+    margin: 0 0 0 5%;
+}
+
+.listSizeScreen li{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.itemSizeScreen *{
+    cursor: pointer;
+}
+
+.listSizeScreen li input[type="checkbox"]{
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid var(--segundario);
+    width: clamp(10px, 3vh, 100px);
+    height: clamp(10px, 3vh, 100px);
+    outline: none;
+    cursor: pointer;
+    border-radius: 1px;
+}
+
+.listSizeScreen li input[type="checkbox"]:checked{
+    background-color: var(--segundario);
+}
+
+.listSizeScreen li label{
+    font-size: clamp(13px, 1.1vw, 30px);
+    font-weight: bolder;
+
+    & .numberSizeScreen{
+        font-size: clamp(11px, 1.7vw, 14px);
+        color:var(--parrafo);
+    }
+
+}
+
+.contentRAM{
+    position: relative;
+    top: 1.5%;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 8% 0;
+    border-bottom: .5px solid var(--parrafo);
+}
+
+.contentRAM .titleRAM{
+    font-size: clamp(13px, 1.4vw, 35px);
+    font-weight: bolder;
+    margin: 3% 0 1.5% 5%;
+}
+
+.listRAM{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: 10px;
+    margin: 0 0 0 5%;
+}
+
+.listRAM li{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.itemRAM *{
+    cursor: pointer;
+}
+
+.listRAM li input[type="checkbox"]{
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid var(--segundario);
+    width: clamp(10px, 3vh, 100px);
+    height: clamp(10px, 3vh, 100px);
+    outline: none;
+    cursor: pointer;
+    border-radius: 1px;
+}
+
+.listRAM li input[type="checkbox"]:checked{
+    background-color: var(--segundario);
+}
+
+.listRAM li label{
+    font-size: clamp(13px, 1.1vw, 30px);
+    font-weight: bolder;
+
+    & .numberRAM{
+        font-size: clamp(11px, 1.7vw, 14px);
+        color:var(--parrafo);
+    }
+
+}
+
+.containerFilters div:last-child{
+    border: none;
+}
+
+/*Articles*/
+
+.containerArticles{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleArticles{
+    position: relative;
+    top:0;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    margin: .5% 0;
+}
+
+
+
+
+/*Content*/
+
+
+/*Footer*/
+
+.footer{
+    position:relative;
+    top: 15%;
+    height: auto;
+    width: 100%;
+    background-color: var(--fondo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: .5px solid var(--parrafo);
+    padding: 2% 6%;
+}
+
+.saveElements{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .5%;
+}
+
+.footerText{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+}
+
+.footerText h3{
+    font-size: clamp(12px, 1.7vw, 22px);
+    font-weight: bolder;
+
+}
+
+.footerText p{
+    font-size: clamp(8px, 1.3vw, 22px);
+    font-weight: bolder;
+}
+
+
+.contactMe{
+    width: 50%;
+    height: fit-content;
+}
+
+.titleContactMe{
+    color: var(--titular);
+    font-size: clamp(10px, 2.1vw, 18px);
+    font-weight: bolder;
+    margin: 0 0 .7% 0;
+}
+
+.listContactMe h4{
+    color: var(--parrafo);
+    font-size: clamp(8px, 1.8vw, 18px);
+    font-weight: bolder;
+}
+
+.itemContact{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.itemContact:hover h4{
+    color: var(--boton);
+}
+
+.listContactMe{
+    display:flex;
+    gap: 10px;
+}
+
+.containerUp{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+
+.up{
+    font-size: clamp(15px, 3vw, 23px);
+    cursor: pointer;
+}
+
+.up:hover i{
+    color: var(--boton);
+}
+
