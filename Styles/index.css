@@ -246,7 +246,7 @@ p{
 
 .containerFilters{
     width: 35%;
-    height: 100%;
+    height: 10%;
     border-right: .5px solid var(--parrafo);
     display: flex;
     flex-direction: column;
