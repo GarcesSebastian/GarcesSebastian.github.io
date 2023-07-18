@@ -6,6 +6,9 @@
     display: none;
 }
 
+.filterQueries{
+    display: none;
+}
 
 /*MEDIA QUERIES*/
 @media (max-width:720px) {
@@ -65,6 +68,19 @@
 
     .nav{
         display: none;
+    }
+
+    .filterQueries{
+        position: relative;
+        top:0;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: .5% 4%;
+        border: 1px solid red;
+        background-color: #3335;
     }
 
     .navSpawn{
