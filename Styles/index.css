@@ -765,6 +765,10 @@ p{
     color: var(--texto-del-boton);
 }
 
+.order{
+    transition: transform .5s ease-in-out;
+}
+
 .orderBars i{
     color: var(--segundario);
 }

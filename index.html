@@ -512,8 +512,267 @@
             </div>  
 
             <div class="filterQueries">
-                    
+                <h4 class="txtFiltersQ">
+                    Filters
+                </h4>
+
+                <span class="iconFilter">
+                    <i class="fa-solid fa-chevron-down fa-lg filter"></i>
+                </span>
             </div>
+            
+            <form class="containerFilterQ">
+                <div class="contentPrice">
+                    <h4 class="titlePrice">Precio</h4>
+    
+                    <div class="priceMinMax">
+    
+                        <div class="containerMin">
+                            <!-- <label for="priceMin">
+                                Min
+                            </label> -->
+                            <input type="number" name="priceMin" id="priceMin" class="priceMin" placeholder="Desde">    
+                        </div>
+    
+                        <div class="containerMax">
+                            <!-- <label for="priceMax">
+                                Max
+                            </label> -->
+                            <input type="number" name="priceMax" id="priceMax" class="priceMax" placeholder="Hasta">    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="contentBrand">
+                    <h4 class="titleBrand">
+                        Brand
+                    </h4>
+                
+                    <div class="containerBrand">
+                        <ul class="listBrand">
+                            <li class="itemBrand">
+                                <input type="checkbox" name="brand" id="samsung">
+                                <label class="lblBrand" for="samsung">
+                                    Samsung
+                                </label>
+                            </li>
+                
+                            <li class="itemBrand">
+                                <input type="checkbox" name="brand" id="apple">
+                                <label class="lblBrand" for="apple">
+                                    Apple
+                                </label>
+                            </li>
+                
+                            <li class="itemBrand">
+                                <input type="checkbox" name="brand" id="xiaomi">
+                                <label class="lblBrand" for="xiaomi">
+                                    Xiaomi
+                                </label>
+                            </li>
+                
+                            <li class="itemBrand">
+                                <input type="checkbox" name="brand" id="huawei">
+                                <label class="lblBrand" for="huawei">
+                                    Huawei
+                                </label>
+                            </li>
+                
+                            <li class="itemBrand">
+                                <input type="checkbox" name="brand" id="oppo">
+                                <label class="lblBrand" for="oppo">
+                                    Oppo
+                                </label>
+                            </li>
+                
+                            <li class="itemBrand">
+                                <input type="checkbox" name="brand" id="vivo">
+                                <label class="lblBrand" for="vivo">
+                                    Vivo
+                                </label>
+                            </li>
+                
+                            <li class="itemBrand">
+                                <input type="checkbox" name="brand" id="lg">
+                                <label class="lblBrand" for="lg">
+                                    LG
+                                </label>
+                            </li>
+                
+                            <li class="itemBrand">
+                                <input type="checkbox" name="brand" id="google">
+                                <label class="lblBrand" for="google">
+                                    Google
+                                </label>
+                            </li>
+                
+                            <li class="itemBrand">
+                                <input type="checkbox" name="brand" id="sony">
+                                <label class="lblBrand" for="sony">
+                                    Sony
+                                </label>
+                            </li>
+                
+                            <li class="itemBrand">
+                                <input type="checkbox" name="brand" id="nokia">
+                                <label class="lblBrand" for="nokia">
+                                    Nokia
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="contentShipping">
+                    <h4 class="titleShipping">Envío Internacional</h4>
+    
+                    <ul class="listShipping">
+    
+                        <li class="itemShipping">
+                            <input type="checkbox" name="shipping" id="shipping" class="shipping">
+                            <label class="lblShipping">
+                                No
+                            </label>
+                        </li>
+    
+                        <li class="itemShipping">
+                            <input type="checkbox" name="shipping" id="shipping" class="shipping">
+                            <label class="lblShipping">
+                                Si
+                            </label>
+                        </li>
+    
+                    </ul>
+                </div>
+    
+                <div class="contentState">
+                    <h4 class="titleState">Estado</h4>
+    
+                    <ul class="listState">
+    
+                        <li class="itemState">
+                            <input type="checkbox" name="State" id="State" class="State">
+                            <label class="lblState">
+                                Nuevo
+                            </label>
+                        </li>
+    
+                        <li class="itemState">
+                            <input type="checkbox" name="State" id="State" class="State">
+                            <label class="lblState">
+                                Usado
+                            </label>
+                        </li>
+    
+                    </ul>
+                </div>
+    
+                <div class="contentStorage">
+                    <h4 class="titleStorage">Capacidad</h4>
+    
+                    <ul class="listStorage">
+    
+                        <li class="itemStorage">
+                            <input type="checkbox" name="Storage" id="Storage" class="Storage">
+                            <label class="lblStorage">
+                                8GB
+                            </label>
+                        </li>
+    
+                        <li class="itemStorage">
+                            <input type="checkbox" name="Storage" id="Storage" class="Storage">
+                            <label class="lblStorage">
+                               16GB
+                            </label>
+                        </li>
+    
+                        <li class="itemStorage">
+                            <input type="checkbox" name="Storage" id="Storage" class="Storage">
+                            <label class="lblStorage">
+                               32GB
+                            </label>
+                        </li>
+    
+                        <li class="itemStorage">
+                            <input type="checkbox" name="Storage" id="Storage" class="Storage">
+                            <label class="lblStorage">
+                                64GB
+                            </label>
+                        </li>
+    
+                        <li class="itemStorage">
+                            <input type="checkbox" name="Storage" id="Storage" class="Storage">
+                            <label class="lblStorage">
+                                128GB
+                            </label>
+                        </li>
+    
+                        <li class="itemStorage">
+                            <input type="checkbox" name="Storage" id="Storage" class="Storage">
+                            <label class="lblStorage">
+                                256GB y Más
+                            </label>
+                        </li>
+    
+                    </ul>    
+    
+                </div>
+    
+                <div class="contentSizeScreen">
+                    <h4 class="titleSizeScreen">Tipo de Pantalla</h4>
+    
+                    <ul class="listSizeScreen">
+    
+                        <li class="itemSizeScreen">
+                            <input type="checkbox" name="SizeScreen" id="SizeScreen" class="SizeScreen">
+                            <label class="lblSizeScreen">
+                                AMOLED
+                            </label>
+                        </li>
+    
+                        <li class="itemSizeScreen">
+                            <input type="checkbox" name="SizeScreen" id="SizeScreen" class="SizeScreen">
+                            <label class="lblSizeScreen">
+                               LCD
+                            </label>
+                        </li>
+    
+                    </ul>    
+    
+                </div>
+    
+                <div class="contentRAM">
+                    <h4 class="titleRAM">RAM</h4>
+    
+                    <ul class="listRAM">
+    
+                        <li class="itemRAM">
+                            <input type="checkbox" name="RAM" id="RAM" class="RAM">
+                            <label class="lblRAM">
+                                Hasta 4GB
+                            </label>
+                        </li>
+    
+                        <li class="itemRAM">
+                            <input type="checkbox" name="RAM" id="RAM" class="RAM">
+                            <label class="lblRAM">
+                               De 6 a 8GB
+                            </label>
+                        </li>
+    
+                        <li class="itemRAM">
+                            <input type="checkbox" name="RAM" id="RAM" class="RAM">
+                            <label class="lblRAM">
+                               10GB y Más
+                            </label>
+                        </li>
+                    </ul>    
+    
+                </div>
+    
+            </form>
 
             <div class="contentArticlesLine">
                 <div class="containerListArticle">

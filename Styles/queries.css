@@ -72,15 +72,64 @@
 
     .filterQueries{
         position: relative;
-        top:0;
+        top:0%;
+        margin: 1% 0 0% 0;
         width: 100%;
         height: fit-content;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: .5% 4%;
-        border: 1px solid red;
         background-color: #3335;
+    }
+
+    .filterQueries h4{
+        font-size: clamp(13px, 1.6vw, 50px);;
+    }
+
+    .containerFilterQ{
+        position: relative;
+        top: 0%;
+        margin: 1% 0;
+        width: 100%;
+        height: fit-content;
+        background-color: #3335;
+        display: flex;
+        flex-direction: column;
+        display: none;
+        transition: all .5s ease-in-out;
+    }
+
+    .contentPrice{
+        padding: 2% 0 4% 0;
+    }
+
+    .contentBrand{
+        padding: 0 0 4% 0;
+    }
+
+    .contentShipping{
+        padding: 0 0 4% 0;
+    }
+
+    .contentState{
+        padding: 0 0 4% 0;
+    }
+
+    .contentStorage{
+        padding: 0 0 4% 0;
+    }
+
+    .contentSizeScreen{
+        padding: 0 0 4% 0;
+    }
+
+    .contentRAM{
+        padding: 0 0 4% 0;
+    }
+
+    .iconFilter{
+        transition: transform .5s ease-in-out;
     }
 
     .navSpawn{

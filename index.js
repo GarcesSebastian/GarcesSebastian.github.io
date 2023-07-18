@@ -34,14 +34,12 @@ order.addEventListener("click", () =>{
     contOrder++;
 
     if(contOrder % 2 != 0){
-        document.querySelector(".order").classList.remove("fa-chevron-down");
-        document.querySelector(".order").classList.add("fa-chevron-up"); 
+        document.querySelector(".order").style.transform = "rotate(-180deg)";
         document.querySelector(".txtOrder").style.color = "var(--segundario)";
         document.querySelector(".order").style.color = "var(--segundario)";
         document.querySelector(".selectOrder").style.display = "flex";
     }else{
-        document.querySelector(".order").classList.add("fa-chevron-down");
-        document.querySelector(".order").classList.remove("fa-chevron-up");    
+        document.querySelector(".order").style.transform = "rotate(0deg)";
         document.querySelector(".txtOrder").style.color = "var(--texto-del-boton)";
         document.querySelector(".order").style.color = "var(--texto-del-boton)";
         document.querySelector(".selectOrder").style.display = "none";
@@ -65,4 +63,16 @@ orderBars.addEventListener("click", () =>{
 });
 
 
+let filterQ = document.querySelector(".filterQueries");
+let contFilterQ = 0;
+filterQ.addEventListener("click", () =>{
+    contFilterQ++;
 
+    if(contFilterQ % 2 != 0){
+        document.querySelector(".iconFilter").style.transform = "rotate(-180deg)";
+        document.querySelector(".containerFilterQ").style.display = "flex";
+    }else{
+        document.querySelector(".iconFilter").style.transform = "rotate(0deg)";
+        document.querySelector(".containerFilterQ").style.display = "none";
+    }
+});
