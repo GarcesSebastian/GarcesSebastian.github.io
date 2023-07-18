@@ -9,13 +9,34 @@
 
 /*MEDIA QUERIES*/
 @media (max-width:620px) {
-    .content{
+    /* .content{
         display: none;
+    } */
+
+    .content{
+        position: relative;
+        top: 17%;
+        width: 98%;
+        height: fit-content;
+        background-color: #3333;
+        box-shadow: 0px 0px 3.5px #3333,0px 0px 3.5px #3333,0px 0px 3.5px #3333;
+        display: flex;
+        margin: 0 1% 8% 1%;
+        border-radius: 1.5px;
     }
 
-    .footer{
-        display: none;
+    .elementArticle .imageArticle{
+        width: clamp(200px, 20vw, 400px);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
     }
+
+    /* .footer{
+        display: none;
+    } */
 
     .nav{
         display: none;
@@ -199,7 +220,7 @@
     }
 
     .iconNav{
-        font-size: clamp(13px, 1.8vw, 60px);
+        font-size: clamp(11px, 1.8vw, 60px);
         display: flex;
         cursor: pointer;
     }
@@ -209,7 +230,7 @@
     }
 
     .menuDown ul li .lblNav{
-        font-size: clamp(10px, 2.2vw, 60px);
+        font-size: clamp(9px, 2.2vw, 60px);
         display: flex;
         cursor: pointer;
     }
