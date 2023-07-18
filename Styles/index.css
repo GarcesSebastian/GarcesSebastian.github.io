@@ -747,6 +747,11 @@ p{
     background-color: #3335;
 }
 
+.contentArticlesLine{
+    display: flex;
+    flex-direction: column;
+}
+
 
 .orderArticles{
     position: absolute;
@@ -952,6 +957,30 @@ p{
     font-size: clamp(12px, 1.3vw, 15px);
 }
 
+.containerPages{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.listPages{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    gap: 10px;
+}
+
+.listPages li{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3335;
+    font-size: 20px;
+}
 
 
 /*Content*/
