@@ -14,13 +14,13 @@
     display: none;
 }
 
-.contentArticlesLine{
-    display: none;
-}
-
-/* .contentArticlesBars{
+/* .contentArticlesLine{
     display: none;
 } */
+
+.contentArticlesBars{
+    display: none;
+}
 
 @media (max-width: 1480px) {
     .contentTopBars{
@@ -143,6 +143,7 @@
         flex-direction: column;
         display: none;
         transition: all .5s ease-in-out;
+        padding: 4% 0;
     }
 
     .contentPrice{
