@@ -967,19 +967,28 @@ p{
 
 .listPages{
     display: flex;
-    width: fit-content;
+    width: 30%;
     height: fit-content;
     gap: 10px;
 }
 
 .listPages li{
-    width: fit-content;
+    width: 100%;
     height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #3335;
-    font-size: 20px;
+    font-size: clamp(12px, 1.5vw, 20px);
+    padding: 1%;
+}
+
+.listPages li a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 

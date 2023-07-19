@@ -20,6 +20,15 @@
         display: none;
     } */
 
+    .listPages{
+        width: 30%;
+    }
+
+    .listPages li{
+        font-size: clamp(10px, 1.7vw, 20px);
+        padding: 1%;
+    }
+
     .containerFilters{
         display: none;
     }
@@ -357,6 +366,17 @@
     }
 }
 
+@media (max-width: 480px) {
+    .listPages{
+        width: 40%;
+    }
+
+    .listPages li{
+        font-size: clamp(10px, 1.7vw, 20px);
+        padding: 1%;
+    }
+}
+
 
 @media (max-width: 430px) {
 
@@ -386,6 +406,9 @@
 
 @media (max-width: 320px) {
     
+    .listPages{
+        width: 50%;
+    }
 
     .charactersArticle h3{
         font-size: clamp(8px, 2.2vw, 45px);
@@ -412,6 +435,9 @@
 
 @media (max-width: 250px) {
     
+    .listPages{
+        width: 70%;
+    }
 
     .charactersArticle h3{
         font-size: clamp(4px, 2.5vw, 45px);
@@ -435,3 +461,11 @@
     }
 
 }
+
+@media (max-width: 215px) {
+    .containerAll{
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
