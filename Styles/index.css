@@ -33,6 +33,7 @@ p{
 .containerAll{
     width: 100%;
     max-width: 1500px;
+    min-width: 220px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -258,7 +259,7 @@ p{
 
 
 .content h3{
-    font-size: clamp(13px, 1.5vw, 35px);
+    font-size: clamp(13px, 1.5vw, 30px);
     color: var(--titular);
 }
 
@@ -769,7 +770,7 @@ p{
 }
 
 .orderArticles span{
-    font-size: clamp(12px, 1.4vw, 32px);
+    font-size: clamp(12px, 1.4vw, 29px);
     cursor: pointer;
     color: var(--texto-del-boton);
 }
@@ -812,7 +813,7 @@ p{
 }
 
 .contentOrder h4, span{
-    font-size: clamp(8.5px, 1vw, 25px);
+    font-size: clamp(8.5px, 1vw, 21px);
     color: var(--texto-del-boton);
 }
 
@@ -997,7 +998,7 @@ p{
 
 .contentArticlesBars{
     position: relative;
-    top: 5%;
+    top: 0%;
     width: 100%;
     height: fit-content;
     display: flex;
@@ -1033,7 +1034,7 @@ p{
 }
 
 .contentTopBars{
-    width: clamp(150px, 20vw, 200px);
+    width: clamp(50px, 22vw, 225px);
     height: 100%;
     display: flex;
     align-items: center;
@@ -1058,12 +1059,12 @@ p{
 }
 
 .charactersArticleBars h3{
-    font-size: clamp(13px, 1.1vw, 18px);
+    font-size: clamp(10px, 1vw, 14px);
     
 }
 
 .charactersArticleBars p{
-    font-size: clamp(11px, 1vw, 18px);
+    font-size: clamp(8px, 1vw, 14px);
 }
 
 .charactersArticleBars h3:last-child{
